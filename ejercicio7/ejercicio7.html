@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Ejercicio 7. <br>
+    <br>
+Las puntuaciones de las películas se clasifican en:<br>
+0: mala, 1: regular, 2: buena,3: muy buena, 4: excelente<br>
+Crear un programa donde se pide al usuario que ingrese un valor entre 0 a 4. Imprimir la<br>
+clasificación de la película según el valor numérico.<br>
+    <script>
+        var clasif=prompt("coloque una clasificacion a la pelicula considerando que... 0: mala, 1: regular, 2: buena,3: muy buena, 4: excelente.");
+        var clasif=parseInt (clasif)
+        switch (clasif)
+        {
+            case 0:
+                console.log("califico la pelicula como 'mala'");
+                break;
+            case 1:
+                console.log("califico la pelicula como 'regular'");
+                break;
+            case 2:
+                console.log("califico la pelicula como 'buena'");
+                break;
+            case 3:
+                console.log("califico la pelicula como 'nuy buena'");
+                break;
+            case 4:
+                console.log("califico la pelicula como 'excelente'");
+                break;
+            default:
+                console.log("no coloco un numero valido de las opciones");
+        }
+    </script>
+</body>
+</html>

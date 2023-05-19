@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Ejercicio 5.
+<br>
+Crear un programa que calcule el pago que hacen un grupo de personas para ver una película<br>
+teniendo en cuenta que si el grupo es menor de 8 personas el pago es de 1.5 pesos por persona y<br>
+para grupos de 8 personas o más el pago es 0.5 pesos por persona.<br>
+    <script>
+        var totalMenor=0;
+        var totalMayor=0;
+        var personas=prompt("ingrese el total de personas que asistiran: ");
+        var personas=parseInt(personas);
+        if (personas<8)
+        {
+            totalMenor=personas*1.5;
+            console.log("el total del monto grupal es de:  $"+totalMenor);
+        }
+        else
+        {
+            totalMayor=personas*0.5;
+            console.log("el total del monto grupal es de:  $"+totalMayor);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Ejercicio 4.
+<br>
+Una farmacia hace el 15% de descuento a sus clientes si la compra es mayor a 100 pesos. Escribir<br>
+un programa que, dado el monto de una compra como valor numérico, diga cuanto debe abonar<br>
+el cliente aplicando el descuento si es necesario.<br>
+
+
+    <script>
+        var desc=0;
+        var totalConDesc=0;
+        var total=prompt("coloque el total del monto: $");
+
+        if (total>=100)
+        {
+            descuento(total);
+        }
+        else
+        {
+            console.log("el total a pagar es de: $"+total);
+        }
+
+
+        function descuento ()
+        {
+            desc=((total*15)/100);
+            totalConDesc=total-desc;
+            console.log("El total a pagar con el descuento incluido es de: $"+totalConDesc);
+        }
+    </script>
+</body>
+</html>
